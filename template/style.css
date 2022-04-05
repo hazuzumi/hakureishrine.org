@@ -1,0 +1,120 @@
+html{
+  /*Set some global colors here for quick re-coloring of stuff!*/
+  --bg-color: #000005;
+  --darker-color: #D01110;
+  --lighter-color: #00000A;
+  --accent-color: #EBE8E0;
+
+  background-color: var(--bg-color);
+  background-image: url(); /*add image url for tiled background*/
+  min-height: 100vh;
+  position: relative;
+}
+ 
+body {
+  color: #EBE8E0; /*text color*/
+  font-family: 'Verdana';
+  text-align: left;
+  margin-bottom: 24px;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  background-color: var(--bg-color);
+}
+
+header img{
+  display: block;
+  max-height: 113px;
+  margin: auto;
+}
+
+
+p {padding: 2px 6px 2px;}
+
+a:link{
+  color: var(--darker-color);
+}
+
+a:visited{
+  color: var(--darker-color);
+}
+
+
+.divider{
+  height: 5px;
+  width: 100%;
+  background-color: var(--accent-color);
+}
+
+main{
+  background-color: var(--lighter-color);
+}
+
+
+.container{
+  display: flex;
+}
+
+.picture img {
+  max-width: 250px;
+  flex-shrink: 0;
+  float: left;
+  margin: 5px;
+}
+
+.description {
+  margin: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: var(--lighter-color);
+  border: 2px solid var(--darker-color);
+}
+
+.description2 {
+  margin: auto;
+  padding: 5px;
+  border-radius: 8px;
+  background-color: var(--lighter-color);
+  border: 2px solid var(--darker-color);
+}
+
+.gallery img {
+  border: 1px solid var(--accent-color); 
+  padding: 5px; 
+  height: 200px;
+}
+
+
+table {
+  table-layout:fixed;
+  border: 5px solid;/*table outline*/
+  border-spacing:2px;
+  margin: auto;
+  width: 40%;
+  min-width: 300px;
+  background-color: var(--lighter-color);
+}
+
+th{
+  text-align: center;
+  border: 1px solid;
+  border-spacing:2px;
+}
+
+td{
+  text-align: left;
+  border: 1px solid;
+  border-spacing:2px;
+  padding: 2px 6px 2px;
+}
+
+footer {
+  font-size: 12px;
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  height: 24px;
+}
